@@ -21,3 +21,8 @@ def predict_pontuacao(data: request_body):
     y_pred = modelo_pontuacao.predict(input_feature)[0].astype(float)
 
     return {'pontuacao': y_pred.tolist()}
+
+# Criar uma rota para a API
+@app.post('/predict')
+def predict(data: request_body):
+    return predict_pontuacao(data)
