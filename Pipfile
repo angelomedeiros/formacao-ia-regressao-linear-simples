@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-learn = "*"
+scipy = "*"
+pandas = "*"
+matplotlib = "*"
+statsmodels = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+seaborn = "*"
+ipykernel = "*"
+pingouin = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
